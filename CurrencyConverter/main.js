@@ -1,3 +1,5 @@
+console.log(`Developed by Nasib Farooq, 
+username on all platforms :@iamnasib`);
 const BASE_URL =
   "https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies";
 ("https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/eur/jpy.json");
