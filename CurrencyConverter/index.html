@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <title>Currency Converter</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="p-4 flex justify-center bg-cyan-500">
+      <h2 class="text-xl font-medium text-white">Currency Converter</h2>
+    </div>
+    <form class="flex flex-col gap-y-4 justify-center items-center">
+      <div
+        class="flex flex-col md:flex-row mt-8 justify-center items-center gap-4"
+      >
+        <div class="flex flex-col items-center">
+          <img class="w-12 h-12" src="https://flagsapi.com/US/flat/64.png" />
+          <div class="amount flex justify-center">
+            <select
+              id="fromDD"
+              class="p-1.5 border-grey-800 border-r-0 rounded-r-none rounded-lg focus:border-cyan-500 hover:border-cyan-500 focus:ring-cyan-500"
+              name="from"
+            ></select>
+            <input
+              id="fromInput"
+              class="p-1.5 border-grey-800 rounded-lg rounded-l-none focus:border-cyan-500 hover:border-cyan-500 focus:ring-cyan-500"
+              placeholder="Amount"
+              type="number"
+            />
+          </div>
+        </div>
+        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+        <div class="flex flex-col items-center">
+          <img class="w-12 h-12" src="https://flagsapi.com/IN/flat/64.png" />
+          <div class="amount flex justify-center">
+            <select
+              id="toDD"
+              class="p-1.5 border-grey-800 border-r-0 rounded-r-none rounded-lg focus:border-cyan-500 hover:border-cyan-500 focus:ring-cyan-500"
+              name="to"
+            ></select>
+            <input
+              id="toInput"
+              class="p-1.5 border-grey-800 rounded-lg rounded-l-none focus:border-cyan-500 hover:border-cyan-500 focus:ring-cyan-500"
+              placeholder="Amount"
+              type="number"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- <button
+        class="p-2 bg-cyan-500 rounded-lg text-white hover:bg-cyan-700 duration-200"
+      >
+        Convert
+      </button> -->
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="codes.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
