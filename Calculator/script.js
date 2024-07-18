@@ -17,10 +17,10 @@ operators.forEach((el) => {
   });
 });
 
-const evalvate = () => {
+const evaluate = () => {
   if (display.value !== "") {
     try {
-      let result = eval(display.value);
+      let result = math.evaluate(display.value);
       display.value = result;
     } catch (e) {
       display.value = "Error";
@@ -28,7 +28,7 @@ const evalvate = () => {
   }
 };
 
-equalToBTN.addEventListener("click", evalvate);
+equalToBTN.addEventListener("click", evaluate);
 clearBTN.addEventListener("click", () => {
   display.value = "";
 });
