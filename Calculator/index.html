@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwindcss CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Like</title>
+  </head>
+  <body class="bg-sky-300 flex justify-center p-4 items-center min-h-screen">
+    <div
+      class="flex flex-col py-6 pt-4 px-4 w-96 gap-y-6 bg-white rounded-xl shadow-lg"
+    >
+      <input
+        id="display"
+        readonly
+        type="text"
+        class="px-3 py-2 rounded-md text-lg text-left focus:outline-none"
+        placeholder="0"
+      />
+      <div class="grid grid-cols-4 gap-4">
+        <button
+          id="clear"
+          class="rounded-full bg-sky-300 py-2 shadow-lg hover:shadow-inner"
+          type="button"
+        >
+          C
+        </button>
+        <button
+          id="backspace"
+          class="rounded-full bg-sky-300 py-2 shadow-lg hover:shadow-inner"
+          type="button"
+        >
+          B
+        </button>
+        <button
+          class="operator rounded-full bg-sky-300 py-2 shadow-lg hover:shadow-inner"
+          value="%"
+          type="button"
+        >
+          %
+        </button>
+        <button
+          class="operator rounded-full bg-sky-300 py-2 shadow-lg hover:shadow-inner"
+          value="/"
+          type="button"
+        >
+          /
+        </button>
+        <button
+          class="operand rounded-full bg-white py-2 shadow-lg hover:shadow-inner"
+          value="7"
+          type="button"
+        >
+          7
+        </button>
+        <button
+          class="operand rounded-full bg-white py-2 shadow-lg hover:shadow-inner"
+          value="8"
+          type="button"
+        >
+          8
+        </button>
+        <button
+          class="operand rounded-full bg-white py-2 shadow-lg hover:shadow-inner"
+          value="9"
+          type="button"
+        >
+          9
+        </button>
+        <button
+          class="operator rounded-full bg-sky-300 py-2 shadow-lg hover:shadow-inner"
+          value="*"
+          type="button"
+        >
+          *
+        </button>
+        <button
+          class="operand rounded-full bg-white py-2 shadow-lg hover:shadow-inner"
+          value="4"
+          type="button"
+        >
+          4
+        </button>
+        <button
+          class="operand rounded-full bg-white py-2 shadow-lg hover:shadow-inner"
+          value="5"
+          type="button"
+        >
+          5
+        </button>
+        <button
+          class="operand rounded-full bg-white py-2 shadow-lg hover:shadow-inner"
+          value="6"
+          type="button"
+        >
+          6
+        </button>
+        <button
+          class="operator rounded-full bg-sky-300 py-2 shadow-lg hover:shadow-inner"
+          value="-"
+          type="button"
+        >
+          -
+        </button>
+        <button
+          class="operand rounded-full bg-white py-2 shadow-lg hover:shadow-inner"
+          value="1"
+          type="button"
+        >
+          1
+        </button>
+        <button
+          class="operand rounded-full bg-white py-2 shadow-lg hover:shadow-inner"
+          value="2"
+          type="button"
+        >
+          2
+        </button>
+        <button
+          class="operand rounded-full bg-white py-2 shadow-lg hover:shadow-inner"
+          value="3"
+          type="button"
+        >
+          3
+        </button>
+        <button
+          class="operator rounded-full bg-sky-300 py-2 shadow-lg hover:shadow-inner"
+          value="+"
+          type="button"
+        >
+          +
+        </button>
+        <button
+          class="operand rounded-full bg-white py-2 shadow-lg hover:shadow-inner"
+          value="0"
+          type="button"
+        >
+          0
+        </button>
+
+        <button
+          class="operand rounded-full bg-white py-2 shadow-lg hover:shadow-inner"
+          value="."
+          type="button"
+        >
+          .
+        </button>
+        <button
+          id="equalTo"
+          class="col-span-2 rounded-full bg-sky-300 py-2 shadow-lg hover:shadow-inner"
+          value="= "
+          type="button"
+        >
+          =
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
